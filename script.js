@@ -37,13 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Typing Effect ===
     const roles = [
-        'Graphic Designer',
+       'Consultant Marketing & Communication',
+       'Digital Strategist',
+       'Business Analyst',
+       'Social Media Marketer',
+       'Graphic Designer',
         'Web Developer',
-        'Digital Strategist',
-        'Formateur en Marketing Digital',
-        'Community Manager',
-        'Brand Designer'
-    ];
+        'Formateur',
+          ];
 
     const typedRole = document.getElementById('typedRole');
     let roleIndex = 0;
