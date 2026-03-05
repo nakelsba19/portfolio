@@ -78,10 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeRole();
 
-    // === Navbar Scroll Effect ===
+    // === Navbar Scroll Effect & Back to Top ===
     const navbar = document.getElementById('navbar');
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('.nav-links a');
+    const backToTop = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
@@ -91,6 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+        }
+
+        // Back to top visibility
+        if (scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
         }
 
         // Active nav link
