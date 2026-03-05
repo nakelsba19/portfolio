@@ -886,14 +886,11 @@ ul {
 .portfolio-item {
     opacity: 1;
     transform: scale(1);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .portfolio-item.hidden {
-    opacity: 0;
-    transform: scale(0.8);
-    position: absolute;
-    pointer-events: none;
+    display: none;
 }
 
 .portfolio-card {
@@ -985,6 +982,11 @@ ul {
 
 .portfolio-card:hover .overlay-text {
     background: var(--primary);
+}
+
+.portfolio-cta {
+    text-align: center;
+    margin-top: 3rem;
 }
 
 /* === Formation Section === */

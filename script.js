@@ -197,17 +197,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             portfolioItems.forEach((item) => {
                 const category = item.getAttribute('data-category');
-
                 if (filter === 'all' || category === filter) {
                     item.classList.remove('hidden');
-                    item.style.position = 'relative';
                 } else {
                     item.classList.add('hidden');
-                    setTimeout(() => {
-                        if (item.classList.contains('hidden')) {
-                            item.style.position = 'absolute';
-                        }
-                    }, 400);
                 }
             });
         });
