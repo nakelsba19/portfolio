@@ -964,6 +964,7 @@ ul {
     justify-content: center;
     opacity: 0;
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .portfolio-card:hover .portfolio-overlay {
